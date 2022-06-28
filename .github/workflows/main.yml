@@ -1,0 +1,28 @@
+# Very basic GitHub Action workflow, goes in ~/.github/workflows/deploy.yaml
+
+name: to test tern tools for docker container
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on any branch or tag commit
+  push:
+    branches:
+      - "main"
+    tags:
+      - "v*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "deploy"
+  deploy:
+    runs-on: ubuntu-latest
+
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      - name: tern-action
+        uses: philips-labs/tern-action@v1.3.0
+        run: tern report -d Dockerfile
