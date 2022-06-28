@@ -25,4 +25,4 @@ jobs:
 
       - name: tern-action
         uses: philips-labs/tern-action@v1.3.0
-        run: tern report -d Dockerfile
+        #run: tern report -d Dockerfile
