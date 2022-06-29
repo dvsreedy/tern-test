@@ -8,9 +8,9 @@ jobs:
       - uses: philips-labs/tern-action@v1.1.0
         id: scan
         with:
-          dockerfile: Dockerfile
+          image: alpine:latest
           format: yaml
-          output: alpine.yaml
+          output: alpine.json
       - uses: actions/upload-artifact@v2
         with:
           name: tern 
