@@ -9,7 +9,7 @@ jobs:
         id: scan
         with:
           image: alpine:latest
-          format: yaml
+          format: json
           output: alpine.json
       - uses: actions/upload-artifact@v2
         with:
