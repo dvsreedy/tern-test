@@ -9,8 +9,8 @@ jobs:
         id: scan
         with:
           image: alpine:latest
-          format: json
-          output: alpine.json
+          format: human
+          output: alpine.txt
       - uses: actions/upload-artifact@v2
         with:
           name: tern 
