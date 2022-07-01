@@ -1,2 +1,2 @@
 # specify start image
-FROM python
+FROM alpine:latest
