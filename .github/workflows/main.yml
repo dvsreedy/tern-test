@@ -9,6 +9,6 @@
     load: true
 
 - name: Scan image
-   uses: anchore/scan-action@v3
-   with:
+  uses: anchore/scan-action@v3
+  with:
     image: "localbuild/testimage:latest"
