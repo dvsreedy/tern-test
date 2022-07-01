@@ -2,6 +2,10 @@ name: build
 on: [push]
 
 jobs:
+   - name: Build docker image
+     run: |
+        cd app
+        docker build . -t app_name -f Dockerfile
   scan:
     runs-on: ubuntu-latest
     steps:
