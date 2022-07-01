@@ -8,7 +8,7 @@
     push: false
     load: true
 
- - name: Scan image
+- name: Scan image
    uses: anchore/scan-action@v3
    with:
-     image: "localbuild/testimage:latest"
+    image: "localbuild/testimage:latest"
